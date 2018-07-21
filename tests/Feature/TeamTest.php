@@ -65,7 +65,7 @@ class TeamTest extends TestCase
     }
 
     /** @test */
-    public function a_team_ca_remove_a_member()
+    public function a_team_can_remove_a_member()
     {
         $team = factory(Team::class)->create(['size' => 2]);
         $users = factory(User::class, 2)->create();
