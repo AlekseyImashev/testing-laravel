@@ -28,6 +28,14 @@ $factory->define(App\Article::class, function (Faker $faker) {
     ];
 });
 
+$factory->define(App\Post::class, function (Faker $faker) {
+    return [
+        'user_id' => factory(App\User::class)->create()->id,
+        'title' => $faker->sentence,
+        'body' => $faker->paragraph,
+    ];
+});
+
 $factory->define(App\Team::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
