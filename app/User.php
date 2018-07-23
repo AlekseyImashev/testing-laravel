@@ -27,6 +27,11 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    /**
+     * Leave the team.
+     *
+     * @return Model
+     */
     public function leaveTeam()
     {
         $this->team_id = null;

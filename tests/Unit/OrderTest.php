@@ -13,6 +13,7 @@ class OrderTest extends TestCase
     {
         $order = $this->createOrderWithProducts();
 
+        dd($order->products());
         $this->assertCount(2, $order->products());
     }
 
