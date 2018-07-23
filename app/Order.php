@@ -34,7 +34,7 @@ class Order extends Model
     }
 
     /**
-     * Total order counting
+     * Total order counting.
      *
      * @return int
      */
