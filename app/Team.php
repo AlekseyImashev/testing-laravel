@@ -26,6 +26,7 @@ class Team extends Model
      * Remove member from the team.
      *
      * @param string $users
+     * @return mixed
      */
     public function remove($users = null)
     {

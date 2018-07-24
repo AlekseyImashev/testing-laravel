@@ -36,7 +36,7 @@ class Order extends Model
     /**
      * Total order counting.
      *
-     * @return int
+     * @return array
      */
     public function total()
     {

@@ -35,7 +35,7 @@ trait Likeability
     /**
      * Toggle like the currnent post.
      *
-     * @return int
+     * @return mixed
      */
     public function toggle()
     {
